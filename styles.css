@@ -121,3 +121,47 @@ form button:hover {
     background-color: #1b6ca8;
     font-size: 1.2rem;
   }
+
+  nav ul {
+
+    display:grid;
+ 
+    grid-template-columns: repeat(4,1fr);
+ 
+    grid-template-rows: 50px;
+ 
+    justify-content:center;
+ 
+    justify-items:center;
+ 
+    list-style-type:none;
+ 
+    margin:0;
+ 
+ }
+ 
+ nav ul li{
+ 
+    background-color:#f3ebeb;
+ 
+    width:95%;
+ 
+    text-align:center;
+ 
+    line-height:50px;
+ 
+ }
+ 
+ nav ul li a{
+ 
+    text-decoration: none;
+ 
+    color:rgb(14, 2, 24);
+ 
+ }
+ 
+ nav ul li:hover{
+ 
+    background-color:red;
+    width: 60%;
+ }

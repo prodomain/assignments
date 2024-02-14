@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cac6c6;
+}
+
+div.li:{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 150px);
+}
+
+body {
+    font-size: 1.4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+h1, h2 {
+    background-color: #3498db;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    letter-spacing: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    border: 2px solid #333;
+    border-radius: 10px 0 10px 0 ;
+    width: 700px;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+form button:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="file"] {
+    margin-top: 5px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #3498db;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #1b6ca8;
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px;
+    justify-content:center;
+    justify-items:center;
+    list-style-type:none;
+    margin:5px
+ 
+ }
+ 
+ nav ul li{
+ 
+    /* background-color:#f3ebeb; */
+    width:95%;
+    text-align:center;
+    line-height:50px;
+    border: 3px solid;
+ 
+ }
+ 
+ nav ul li a{
+ 
+    text-decoration: none;
+ 
+    color:rgb(14, 2, 24);
+ 
+ }
+ 
+ nav ul li:hover{
+ 
+    background-color: none;
+    width: 60%;
+ }

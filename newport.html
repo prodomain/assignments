@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio with grid</title>
+    <link rel="icon" type="image/x-icon" href="./promocon.ico">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: none;
+}
+        main{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-template-areas: 
+            "a b "
+            "c d"
+            "e f"
+            "g h"
+            ;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        div:nth-last-of-type(1){
+            grid-area: a ;
+            background-color: #3498db;
+            border-radius: 10px;
+            
+        }
+        div:nth-last-of-type(2){
+            grid-area: b ;
+            border-radius: 10px;
+        }
+        div:nth-last-of-type(3){
+            grid-area: c ;
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+        div:nth-last-of-type(4){
+            grid-area: d ;
+            border-radius: 10px;
+        }
+        div:nth-last-of-type(5){
+            grid-area: e ;
+            background-color: #3498db;
+            border-radius: 10px;
+
+        }
+        div:nth-last-of-type(6){
+            grid-area: f ;
+            border-radius: 10px;
+        }
+        div:nth-last-of-type(7){
+            grid-area: g ;
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+        div:nth-last-of-type(8){
+            grid-area: h ;
+            border-radius: 10px;
+        }
+
+        div{
+    border: 2px solid;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    letter-spacing: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul {
+font-size: 22px;
+display:grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 60px;
+justify-content:center;
+justify-items:center;
+list-style-type:none;
+margin:5px
+
+}
+
+nav ul li{
+
+background-color:#3498db; 
+width:95%;
+text-align:center;
+line-height:50px;
+border: 3px solid;
+border-radius: 20px;
+
+}
+
+nav ul li a{
+
+text-decoration: none;
+
+color:rgb(14, 2, 24);
+
+}
+
+nav ul li:hover{
+
+background-color: none;
+width: 60%;
+}
+
+h1{
+    background-color: #3498db;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+h2 {
+    background-color: #3498db;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    border: 2px solid #333;
+    border-radius: 10px 0 10px 0 ;
+    width: 700px;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+form button:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    border: 2px solid #333;
+    border-radius: 10px 0 10px 0 ;
+    width: 700px;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+}
+
+form button:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="file"] {
+    margin-top: 5px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #3498db;
+    font-size: 1rem;
+    color: #0e0101;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #1b6ca8;
+    font-size: 1.2rem;
+  }
+
+  .skl{
+    font-size: 25px;
+  }
+
+  .abt{
+    font-size: 25px;
+  }
+
+  #assignments{
+background-color: #3498db;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="head1">Ikenga Promise's Portfolio</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <br>
+                <br>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <br>
+        <p class="abt">Brief introduction, personal details, and interests.</p>
+    </section>
+    <section id="assignments"><h2>Assignments</h2></section>
+    
+    <main>
+    
+        <div><img src="./forms.jpg" alt="Assignment 4" width="700px" height="190px"></div>
+        <div><h3>Creating Forms with HTML</h3>
+            <p>Creating forms with HTML is essential for web development. The form> element wraps input fields, buttons, and other elements. Various input elements like input>` and textarea>` capture different data types. Attributes like `action` and `method` determine data processing. Labels (`label>`) enhance accessibility. HTML5 introduces specialized input types. Validation features, such as `required`, ensure accurate data submission. HTML forms facilitate user interaction, making them a fundamental aspect of web development.</p>
+            </div>
+        <div><img src="./belgian flag.jpg" alt="Assignment 3" width="700px" height="190px"></div>
+        <div><h3>Belgian Flag with HTML/CSS</h3>
+            <p>Creating the Belgian flag with HTML and CSS involves using div> elements to represent the three horizontal bands of black, yellow, and red. This exercise showcases the fusion of HTML and CSS to accurately represent a cultural symbol digitally.</p>
+            </div>
+        <div><img src="./travel guide.png" alt="Assignment 2" width="700px" height="190px"></div>
+        <div> <h3>Interactive Travel Guide</h3>
+            <p>Marking up an interactive travel guide involves using HTML (Hypertext Markup Language) to structure the content of the guide, thereby creating a logical and navigable framework for users. In this scenario, the primary goal is to provide an immersive and informative experience without delving into visual styling considerations.</p></div>
+        <div><img src="./letter.png" alt="Assignment 1" width="700px" height="190px"></div>
+        <div><h3>Marking up a Letter</h3>
+            <p>Marking up a letter involves using HTML (Hypertext Markup Language) to structure the content of a letter, facilitating its representation on the web. HTML, as a markup language, allows for the logical organization of different components within the document. In the absence of CSS (Cascading Style Sheets), the focus is primarily on the structural elements rather than visual styling.</p></div>
+    </main>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p class="skl">Proficiency in:
+            <br>Computer Hardware/Networking
+            <br>HTML
+            <br>CSS
+            <br>Python
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+           
+            <div class="contact-form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="reason">Reason for Enquiry:</label>
+                    <select id="reason" name="reason" required>
+                      <option value="option1">Project Enquiries</option>
+                      <option value="option2">Job Opportunities</option>
+                      <option value="option3">Partnership or Collaboration</option>
+                      <option value="option4">Networking and Professional Connections</option>
+                      <option value="option5">Seeking Services or Expertise</option>
+                    </select>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="files">Upload Files:</label>
+                    <input type="file" id="files" name="files[]" multiple>
+                  </div>
+            
+                  <div class="form-group">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            
+        </form>
+</body>
+</html>

@@ -60,6 +60,14 @@ function nameCount(arrayName) {
     return arrayName.includes("Charlie");
   }
   
+function longestName(arrayName){
+  return arrayName.sort((a,b)=> a.length-b.length)[9]
+}
+
+function shortestName(arrayName){
+  return arrayName.sort((a,b)=> a.length-b.length)[0]
+}
+
   function uppercaseNames(arrayName) {
     return arrayName.map(name => name.toUpperCase());
   }
@@ -69,7 +77,7 @@ function nameCount(arrayName) {
   }
   
   function allFiveChars(arrayName) {
-    return arrayName.every(name => name.length >= 5);
+    return arrayName.every(name => name.length >= 5) 
   }
   
   function indexOfEmma(arrayName) {
@@ -79,7 +87,10 @@ function nameCount(arrayName) {
   function concatenateNames(arrayName) {
     return arrayName.join(", ");
   }
- 
+
+  function replaceName(arrayName){
+    return arrayName.map(name=> name ==="Alice" ? "Eleanor" : name)
+  }
 
   para[10].innerHTML = '<strong>Name Count in Array</strong>:  '  + nameCount(names)
   para[11].innerHTML = '<strong>Check if "Charlie" included in Array?</strong>:  '  + includeCharlie(names)
@@ -88,5 +99,10 @@ function nameCount(arrayName) {
   para[14].innerHTML = '<strong>Check if names contains 5 characters</strong>:  '  + allFiveChars(names)
   para[15].innerHTML = '<strong>Index of Emma</strong>:  '  + indexOfEmma(names)
   para[16].innerHTML = '<strong>Concatenated Names</strong>:  '  + concatenateNames(names)
+  para[17].innerHTML = '<strong>Longest Name is</strong>:  '  + longestName(names)
+  para[18].innerHTML = '<strong>Shortest Name is</strong>:  '  + shortestName(names)
+  para[19].innerHTML = '<strong>Replace "Alice" with "Eleanor" </strong>:  '  + replaceName(names)
+
+
 
 
